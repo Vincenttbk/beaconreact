@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest",
+    "reset:lib": "rm -rf node_modules && rm package-lock.json && npm run init:lib",
+    "init:lib": "npm install"
   },
   "dependencies": {
     "react": "16.8.3",
